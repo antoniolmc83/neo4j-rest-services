@@ -8,4 +8,5 @@ import com.example.bean.Person;
 @Repository
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
 
+	Person findByName(String name);
 }
